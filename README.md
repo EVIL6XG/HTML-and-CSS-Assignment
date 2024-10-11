@@ -4,50 +4,46 @@ This project showcases basic web development using HTML and CSS. It features a r
 ### index.html
 ```html
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание по веб-дизайну</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Web Design Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            border: 1px solid #000;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .section-title {
+            text-align: right;
+            margin: 0 0 10px 0;
+        }
+        @media (max-width: 768px) {
+            .section {
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="section">
-        <h2 class="section-title">Раздел 1</h2>
-        <p>Это текст для первого раздела. Он содержит описание.</p>
+        <h2 class="section-title">Section 1</h2>
+        <p>This is the text for the first section. It contains a description.</p>
     </div>
     <div class="section">
-        <h2 class="section-title">Раздел 2</h2>
-        <p>Это текст для второго раздела. Он также содержит описание.</p>
+        <h2 class="section-title">Section 2</h2>
+        <p>This is the text for the second section. It also contains a description.</p>
     </div>
     <div class="section">
-        <h2 class="section-title">Раздел 3</h2>
-        <p>Это текст для третьего раздела. Продолжение описания.</p>
+        <h2 class="section-title">Section 3</h2>
+        <p>This is the text for the third section. Continuation of the description.</p>
     </div>
 </body>
 </html>
-### style.css
-```css
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.section {
-    border: 1px solid #000;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.section-title {
-    text-align: right;
-    margin: 0 0 10px 0;
-}
-
-@media (max-width: 768px) {
-    .section {
-        margin: 10px;
-    }
-}
